@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background: #000;
+}
+section{
+    position: relative;
+    width:100% ;
+    height: 100%;
+    overflow:hidden ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 100px 150px;
+   
+}
+section header{ 
+  position:absolute;
+  top: 0;
+  left:0;
+  width: 100%;
+  padding: 40px 100px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  z-index: 10;
+}
+.logo{
+    width: 10%;
+}
+section header .logo{
+    position: relative;
+    font-size: 1.5em;
+    color: aliceblue;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+
+}
+section header .toggle{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    background: url(/images/menu.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.bg{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    background-position: center;
+   
+}
+.luffy{
+    position: absolute;
+    height: 65%;
+    bottom:0;
+    right:90px;
+    z-index:100 ;
+}
+.luffy10{
+        position: absolute;
+        height: 65%;
+        right:0px;
+        z-index:100 ;
+        bottom: 100px;
+       
+}
+.teach{
+    position: absolute;
+    height: 95%;
+    bottom:0;
+    left:100px;
+    z-index:100 ;
+   
+}
+
+.livre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+    
+}
+
+.tome102{
+    width:350px;
+    height:525px;
+}
+.tome101{
+    width: 350px;
+    height:525;
+    left: 15px;
+}
+.tome99{
+    width:350px;
+    height: 525px;
+    right: 100px;
+}
+
+
+.content{
+    position: relative;
+    max-width: 500px;
+    z-index: 1;
+    padding-top: 100px;
+
+}
+.content h1{
+    font-size: 2.5em;
+    color: #fff;
+    font-weight: 400;
+    line-height: 2em;
+}
+.content h1 span{
+    font-weight: 800;
+    font-size: 1.8em;
+    letter-spacing: 5px;
+    color: rgb(60, 91, 175);
+}
+.content p{
+    color: #fff;
+    padding-top: 15px;
+}
+
+.content a {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #000;
+}
+.hero{
+    background-color: #fff;
+   
+}
+
