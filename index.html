@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>manga</title>
+</head>
+<body>
+    <section >
+        <header>
+          <a href="#"><img src="./images/logo.png" class="logo" alt="logo"></a>
+          <div class="toggle"> </div>
+        </header>
+        
+        <img src="./images/luffy10.png"  class="luffy" alt="luffy">
+        <div class="content">
+            <h1>kaizoku o ni ore wa naru <span>    <img src="./images/onepiece.png" class="onepiece" style="width:70% ;" alt=""> </span></h1>
+            <p>Avant son exécution, le pirate légendaire Gold Roger lance une chasse au trésor sans précédent et stimule ainsi les pirates du monde entier. Luffy, transformé en homme élastique après avoir mangé un fruit du démon, rêve de devenir le roi des pirates et de trouver le mystérieux “One Piece”. L’ère des pirates bat son plein, Luffy au chapeau de paille et son équipage affronteront des ennemis hauts en couleurs et vivront des aventures rocambolesques !</p>
+            <a href="#">clique </a>
+        </div>
+        
+    </section>
+    <section class="hero">
+       
+        <div class="livre">
+            <div class="tome">
+            <img src="./images/102-T.jpeg" class="tome102" alt="livre" >
+            </div>
+
+            <div class="tome">
+                <img src="./images/tome99.jpeg" class="tome99" alt="livre">
+                </div>
+
+            <div class="tome">
+            <img src="./images/101.jpeg"  class="tome101" alt="livre" >
+           </div>
+        </div>
+        
+        
+        
+    </section>
+    <section class="bg1">
+    <img src="./images/luffy.png"  class="luffy10" alt="luffy">
+    <img src="./images/marshal.webp"  class="teach" alt="teach">
+   
+
+    </section>
+    <script >
+    window.addEventListener('scroll', function(){
+        const luffy = document.querySelector('.luffy');
+        const content = document.querySelector('.content');
+        const tome101 = document.querySelector('.tome101');
+        const tome102 = document.querySelector('.tome102');
+        const tome99 = document.querySelector('.tome99');
+        const luffy10 = document.querySelector('.luffy10');
+        const teach = document.querySelector('.teach');
+        const onepiece= document.querySelector('.onepiEce');
+       
+        let scrollPosition = window.pageYOffset;
+
+        luffy.style.transform = 'translateY(' + scrollPosition *-.5 +'px';
+        content.style.transform = 'translateX(' + scrollPosition *.2 +'px';
+        tome101.style.transform = 'translateX(' + scrollPosition * 0.1 +'px';
+        tome102.style.transform = 'translateX(' + scrollPosition * -0.1 +'px';
+        teach.style.transform = 'translateX(' + scrollPosition * 0.1 +'px';
+        luffy10.style.transform = 'translateX(' + scrollPosition * -0.1 +'px';
+        
+    } );
+
+ 
+   
+        
+                
+       
+            
+    </script>
+</body>
+</html>
